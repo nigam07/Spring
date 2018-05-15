@@ -1,0 +1,14 @@
+1. What is Web-Services?
+  Answer:- Web-Services are XML based information exchange system that uses Internet for direct application-to-application interaction.These systems can include programs,
+	   objects, documents, messages, or documents.
+
+2. What is REST?
+  Answer:- REST stands for (Representational State Transfer).It is an architectural style of creating, retrieving, manipulating
+	   deleting the resources through web services which uses the advantage of ubiquity(the state of being everywhere at once)
+of HTTP protocol and uses HTTP methods to define actions.
+
+3. What is RESTFul Web Service?
+  Answer:- There are two popular way to develop web services using SOAP(Simple Object Access Protocol) which is XML based way to expose web services and second REST
+           based web services which uses HTTP protocol.Web-Services developed using REST style also known as RESTFul web services.
+
+4. 

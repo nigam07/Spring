@@ -1,0 +1,21 @@
+1. When to use PUT or POST in Restful Web-Services?
+
+Explanation:- It is one of the most common confusion among web developers that when should go for PUT and when should go for POST
+ ------------  while developing Web-Services. Since both can be used for submission of data, we can use either PUT or POST
+to create or update a resource. Most of the developers wants to use PUT while creating the resource on server because it is
+idempotent means unchangable.No matter how many times we call PUT,the state of the resource will not change.Since,the possibility
+of re-submission is real on slow network so we no need to worry about how many times user is clicking on submit button.But one 
+thing we should keep in our mind is whenever we are using PUT to create the resource definitely we have to provide the id.
+Eg: PUT/book/{id}.
+		   Now lets talk about the individual functionality of both the methods.Since, most of the system wants to keep
+control over the id, they want to generate id by their own in the database rather than explicitly defined by the client. PUT doesn't
+seems to be the right method to create a resource. It is also having a challenge of multiple clients creating a resource with same id
+and instead of creating they end up updating the same resource.
+		Even though POST is not idempotent, it is a better choice for creating resource because it doen't requires a user to 
+provide the id of the resource. Instead when POST method completes it returns the id and URI(Uniform Resource Identifier) of newly created
+resource in the location header.Further we can update the resource because it is having both id and URI of the resource.
+	Similarly PUT is better choice for updating the resource because it is having id and it is idempotent.So if user submits multiple
+PUT request then the state of the resource will not change.In short we can say that POST is the better choice to create a resource and PUT is
+the better choice to update a resource.
+
+	
